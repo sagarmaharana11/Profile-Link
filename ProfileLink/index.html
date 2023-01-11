@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - UI #3 - Profile Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/13f218cab4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="card">
+  <div class="ds-top"></div>
+  <div class="avatar-holder">
+    <img src="/Sagar.png" alt="Sagar Maharana">
+  </div>
+  <div id="link">
+			<a href="https://github.com/sagarmaharana11" target="_blank">
+				<img src="https://cdn-icons-png.flaticon.com/512/2175/2175377.png" style="filter: invert(100%);" width="35">
+			</a>
+		</div>
+  <div class="name">
+    <a href="https://www.linkedin.com/in/sagar-maharana-033094241/" target="_blank">Sagar Maharana</a>
+    <h6 title="Followers"><i class="fas fa-users"></i> <span class="followers">500+</span></h6>
+  </div>
+  <div class="button">
+    <a href="#" class="btn" onmousedown="follow();">Follow <i class="fas fa-user-plus"></i></a>
+  </div>
+  <div class="ds-info">
+    <div class="ds pens">
+      <h6 title="Number of pens created by the user">Fork <i class="fas fa-edit"></i></h6>
+      <p>3</p>
+    </div>
+    <div class="ds projects">
+      <h6 title="Number of projects created by the user">Projects <i class="fas fa-project-diagram"></i></h6>
+      <p>5</p>
+    </div>
+    <div class="ds posts">
+      <h6 title="Number of posts">Posts <i class="fas fa-comments"></i></h6>
+      <p>28</p>
+    </div>
+  </div>
+  <div class="ds-skill">
+    <h6>Skill <i class="fa fa-code" aria-hidden="true"></i></h6>
+    <div class="skill html">
+      <h6><i class="fab fa-b"></i> Blender3D</h6>
+      <div class="bar bar-html">
+        <p>95%</p>
+      </div>
+    </div>
+    <div class="skill css">
+      <h6><i class="fab fa-unity"></i> Unity3d </h6>
+      <div class="bar bar-css">
+        <p>90%</p>
+      </div>
+    </div>
+    <div class="skill javascript">
+      <h6><i class="fab fa-u"></i></i> UnrealEngine5 </h6>
+      <div class="bar bar-js">
+        <p>75%</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
