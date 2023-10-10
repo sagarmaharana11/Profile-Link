@@ -1,0 +1,81 @@
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* Apply the font to the body */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Styles for the light/dark mode toggle */
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 40px;
+}
+
+form:before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 49%;
+  border: 0.3rem solid #ccc;
+  border-radius: 99em;
+  transform: translateY(-50%);
+}
+
+input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+label {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-left: -1.125em;
+  cursor: pointer;
+  transition: color 0.5s; /* Add a color transition for smooth hover effect */
+}
+
+label:hover {
+  color: crimson; /* Change the color when hovering */
+}
+
+/* Add space between toggle labels */
+label ~ label {
+  margin-top: 1rem;
+}
+
+/* Make the first letter of the label transparent by default */
+label::first-letter {
+  color: transparent;
+}
+
+/* Change the color of the first letter when the input is checked (toggle is on) */
+input:checked + label::first-letter {
+  color: #000; /* Change the color to black when the toggle is on */
+}
+
+/* Add this CSS to maintain the style */
+.project-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s; /* Add a color transition for smooth hover effect */
+}
+
+.project-link:hover {
+  color: crimson; /* Change the color when hovering */
+}
+
+

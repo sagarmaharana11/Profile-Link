@@ -2,9 +2,10 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - UI #3 - Profile Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
+  <title>Profile Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./style2.css">
   <script src="https://kit.fontawesome.com/13f218cab4.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon-32x32.png">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -13,11 +14,12 @@
   <div class="avatar-holder">
     <img src="/Sagar.png" alt="Sagar Maharana">
   </div>
-  <div id="link">
-			<a href="https://github.com/sagarmaharana11" target="_blank">
-				<img src="https://cdn-icons-png.flaticon.com/512/2175/2175377.png" style="filter: invert(100%);" width="35">
-			</a>
-		</div>
+ <div id="link">
+    <a href="https://github.com/sagarmaharana11" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2175/2175377.png" style="filter: invert(100%);" width="35">
+    </a>
+</div>
+
   <div class="name">
     <a href="https://www.linkedin.com/in/sagar-maharana-033094241/" target="_blank">Sagar Maharana</a>
     <h6 title="Followers"><i class="fas fa-users"></i> <span class="followers">500+</span></h6>
@@ -31,9 +33,13 @@
       <p>3</p>
     </div>
     <div class="ds projects">
-      <h6 title="Number of projects created by the user">Projects <i class="fas fa-project-diagram"></i></h6>
-      <p>5</p>
-    </div>
+  <h6 title="Number of repositories on GitHub">
+    <a href="https://github.com/sagarmaharana11" target="_blank" class="project-link">
+      Repos <i class="fas fa-project-diagram"></i>
+    </a>
+  </h6>
+  <p id="repoCount">Fetching data...</p>
+</div>
     <div class="ds posts">
       <h6 title="Number of posts">Posts <i class="fas fa-comments"></i></h6>
       <p>28</p>
@@ -54,14 +60,26 @@
       </div>
     </div>
     <div class="skill javascript">
-      <h6><i class="fab fa-u"></i></i> UnrealEngine5 </h6>
+      <h6><i class="fab fa-u"></i></i> UnrealEngine-5 </h6>
       <div class="bar bar-js">
         <p>75%</p>
       </div>
     </div>
+    <div class="skill spring-boot">
+    <h6><i class="fab fa-spring"></i> Spring Boot</h6>
+    <div class="bar bar-spring-boot">
+      <p>80%</p>
+    </div>
+  </div>
   </div>
 </div>
-  
+<!-- Light/Dark -->
+<form>
+        <input type="radio" name="status" id="on" checked >
+        <label for="on" onclick="light()">On</label>
+        <input type="radio" name="status" id="off" >
+        <label id="off" for="off" onclick="night()">Off</label>
+</form>
 <!-- partial -->
   <script  src="./script.js"></script>
 
